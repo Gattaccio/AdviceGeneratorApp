@@ -6,8 +6,8 @@ var idrand = Math.floor(Math.random() * 220) + 1;
 getQuote(idrand);
 
 async function getQuote (idrand) {
- var prova = 'https://api.adviceslip.com/advice/'+idrand;
- console.log(prova);
+ var random_quote = 'https://api.adviceslip.com/advice/'+idrand;
+ console.log(random_quote);
  const response = await fetch (prova); 
  const data = await response.json(); 
  quote.innerHTML=data.slip.advice;
